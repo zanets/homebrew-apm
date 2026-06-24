@@ -1,30 +1,30 @@
 class Apm < Formula
   desc "Agent package manager for Claude Code"
   homepage "https://github.com/zanets/apm"
-  version "0.4.4"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/zanets/apm/releases/download/v#{version}/apm-aarch64-apple-darwin.tar.gz"
-      sha256 "eafcafe7605823a43d9de2e7ccf4c2d2783cc1adee16a4df332b772ff0b927da"
+      sha256 "1a73f1350bbbdd34fb819a1e74639ed29678c3b72b9e702a4042bfd7435b2e3b"
     end
 
     on_intel do
       url "https://github.com/zanets/apm/releases/download/v#{version}/apm-x86_64-apple-darwin.tar.gz"
-      sha256 "aec494064bab1b31d946a1d2c16dd279fe669d467e024f720d22f8bf04e45752"
+      sha256 "8f562d9e16c9190ed214409d3f89b207e5ec72321ab851de6d8f1c7fde983324"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/zanets/apm/releases/download/v#{version}/apm-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0bbb53624ce82fbafb131a3023f9ed1fb401f91af695219f91a2e4d5e118cdb1"
+      sha256 "a2d2367c7e57b59b5364353e748dc664b46ff486061f8e5ffadde98c7a0188a5"
     end
 
     on_intel do
       url "https://github.com/zanets/apm/releases/download/v#{version}/apm-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6e70b1c23479ced50984e8d2e74ebe6c70ce6560be8d229f7575706ac55fe897"
+      sha256 "3b77bdd5402f6aa24a37cab2e79cef9c3f237f3b2ec602f75318a624de3f7f80"
     end
   end
 
